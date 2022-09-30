@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.Stockcontroller">
+   <children>
+      <Ellipse fill="#59d8ff42" layoutX="88.0" layoutY="655.0" radiusX="134.0" radiusY="111.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Ellipse fill="#59d8ff42" layoutX="985.0" layoutY="195.0" radiusX="121.0" radiusY="224.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="70.0" layoutY="92.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="113.0" />
+      <Label layoutX="68.0" layoutY="191.0" prefHeight="21.0" prefWidth="89.0" text="Catégorie">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="idstockfield" layoutX="178.0" layoutY="91.0" />
+      <TextField fx:id="categoriefield" layoutX="178.0" layoutY="189.0" />
+      <Label layoutX="68.0" layoutY="142.0" text="Designation">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnajouterstock" layoutX="185.0" layoutY="302.0" mnemonicParsing="false" onAction="#RegisterProduit" prefHeight="38.0" prefWidth="74.0" text="Ajouter" />
+      <Button fx:id="btnmodifierstock" layoutX="430.0" layoutY="302.0" mnemonicParsing="false" onAction="#handlebuttonaction" prefHeight="38.0" prefWidth="89.0" text="Modifier" />
+      <Button fx:id="btnsupprimerstock" layoutX="660.0" layoutY="302.0" mnemonicParsing="false" onAction="#deleteAchat" prefHeight="38.0" prefWidth="89.0" text="Supprimer" />
+      <TextField fx:id="qtetotalefield" layoutX="600.0" layoutY="121.0" prefHeight="31.0" prefWidth="150.0" />
+      <ComboBox fx:id="box1" layoutX="599.0" layoutY="80.0" prefWidth="150.0" promptText="Unité" />
+      <BorderPane layoutX="51.0" layoutY="368.0" prefHeight="230.0" prefWidth="903.0">
+         <center>
+            <TableView fx:id="tabviewstock" prefHeight="230.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="Nproduitstock" prefWidth="69.60000991821289" text="N° Produit" />
+                <TableColumn fx:id="Designationstock" prefWidth="120.80001068115234" text="Designation" />
+                  <TableColumn fx:id="categorie" prefWidth="96.80001831054688" text="Categorie" />
+                  <TableColumn fx:id="unite" prefWidth="80.00006103515625" text="Unité" />
+                  <TableColumn fx:id="dateexpiration" prefWidth="110.40005493164062" text="Date Expiration" />
+                  <TableColumn fx:id="qtetotale" prefWidth="102.4000244140625" text="Quantité Totale" />
+                  <TableColumn fx:id="qtevente" minWidth="4.800048828125" prefWidth="92.0" text="Quantité vente" />
+                  <TableColumn fx:id="qtereste" prefWidth="94.39990234375" text="Quantité reste" />
+                  <TableColumn fx:id="gain" prefWidth="58.4000244140625" text="Gain" />
+                  <TableColumn fx:id="prixunitaire" minWidth="0.0" prefWidth="81.5999755859375" text="Prix Achat" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <ComboBox fx:id="box2" layoutX="178.0" layoutY="136.0" prefHeight="31.0" prefWidth="186.0" promptText="Designation" />
+      <Label layoutX="458.0" layoutY="83.0" text="Unité">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="457.0" layoutY="128.0" text="Quantité Totale">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="prixunitaireachat" layoutX="600.0" layoutY="238.0" prefHeight="31.0" prefWidth="150.0" />
+      <Label layoutX="459.0" layoutY="244.0" text="Prix Achat">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnrechercherstock" layoutX="491.0" layoutY="614.0" mnemonicParsing="false" text="Rechercher" />
+      <ComboBox layoutX="58.0" layoutY="614.0" prefWidth="150.0" promptText="Catégorie" />
+      <TextField layoutX="271.0" layoutY="614.0" prefHeight="31.0" prefWidth="150.0" />
+      <Button fx:id="btnbackstock" layoutX="19.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchtogeneral" text="&lt;" />
+      <TextField fx:id="qteVendu" layoutX="600.0" layoutY="161.0" prefHeight="31.0" prefWidth="150.0" />
+      <Label layoutX="458.0" layoutY="167.0" prefHeight="20.0" prefWidth="100.0" text="Quantité Vendu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="759.0" layoutY="244.0" prefHeight="20.0" prefWidth="71.0" text="Prix Vente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prixventefld" layoutX="830.0" layoutY="239.0" prefHeight="31.0" prefWidth="150.0" />
+      <DatePicker fx:id="datepicker" layoutX="178.0" layoutY="238.0" prefHeight="31.0" prefWidth="175.0" />
+      <Label layoutX="72.0" layoutY="242.0" prefHeight="25.0" prefWidth="81.0" text="Date expiration" />
+      <Label layoutX="466.0" layoutY="15.0" text="Stock" textFill="#59d8ff">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfd11400" height="53.0" layoutX="289.0" layoutY="15.0" stroke="#2685ad" strokeType="INSIDE" width="463.0" />
+   </children>
+</Pane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.Generalcontroller">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: E1FAFA;">
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Pane layoutX="-4.0" layoutY="-3.0" prefHeight="507.0" prefWidth="810.0" style="-fx-background-color: D6F5F5;">
+         <children>
+            <Circle fill="#89e3ff" layoutX="120.0" layoutY="108.0" radius="95.0" stroke="#ece4e4" strokeType="INSIDE" />
+            <Circle fill="#89e3ff" layoutX="121.0" layoutY="368.0" radius="95.0" stroke="#ece4e4" strokeType="INSIDE" />
+            <Circle fill="#89e3ff" layoutX="398.0" layoutY="243.0" radius="95.0" stroke="#ece4e4" strokeType="INSIDE" />
+            <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="44.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/263546880_2782246828739252_792571654240945666_n.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#89e3ff" layoutX="691.0" layoutY="108.0" radius="95.0" stroke="#ece4e4" strokeType="INSIDE" />
+            <ImageView fitHeight="136.0" fitWidth="150.0" layoutX="623.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/262856702_963241400931181_2958373208188584494_n.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#89e3ff" layoutX="691.0" layoutY="368.0" radius="95.0" stroke="#ece4e4" strokeType="INSIDE" />
+            <ImageView fitHeight="136.0" fitWidth="136.0" layoutX="621.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/263073459_1757613044433258_1249011381831536803_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="320.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/263177129_254299650026039_5489215909281475818_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/262878852_1571270993211945_433479419685887615_n.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnachats" layoutX="643.0" layoutY="468.0" mnemonicParsing="false" onAction="#gotoachats" prefHeight="26.0" prefWidth="97.0" text="Achats" />
+            <Button fx:id="btnfournisseurs" layoutX="60.0" layoutY="468.0" mnemonicParsing="false" onAction="#gotofournisseurclient" prefHeight="26.0" prefWidth="136.0" text="Fournisseurs/ Clients" />
+            <Button fx:id="btnventes" layoutX="350.0" layoutY="347.0" mnemonicParsing="false" onAction="#gotoventes" prefHeight="26.0" prefWidth="97.0" text="Ventes" />
+            <Button fx:id="btnfactures" layoutX="643.0" layoutY="212.0" mnemonicParsing="false" onAction="#gotofacture" prefHeight="26.0" prefWidth="97.0" text="Factures" />
+            <Button fx:id="btnproduits" layoutX="72.0" layoutY="212.0" mnemonicParsing="false" onAction="#gotoproduit" prefHeight="26.0" prefWidth="97.0" text="Stock" />
+            <Button fx:id="btnbacksignin" layoutX="7.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchtomain" prefHeight="34.0" prefWidth="33.0" text="&lt;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
